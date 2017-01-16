@@ -8,24 +8,18 @@ last=[905,758]
 x,y=first[0],first[1]
 w,h=last[0]-first[0],last[1]-first[1]
 robot = Robot()
-robot.sleep(5)
-# img=ImageGrab.grab()
-# img = numpy.array(img.convert('L')) 
-# img = img[:, :].copy()
-
+robot.sleep(3)
 scrn = numpy.array(ImageGrab.grab().convert('RGB')) 
 scrn = scrn[:, :, ::-1].copy() 
 scrn=scrn[y:y+h, x:x+w]
 img = scrn[:,:,2]
+img = cv2.equalizeHist(img)
 
-
-
-# img=img[y:y+h, x:x+w]
 x,y,w,h=0,0,len(img[0])/7,len(img)/10
 img2=img.copy()
 toClick=[]
 for i in range(1,71):
-    tmp=cv2.imread('Templates\\'+str(i)+'.jpg',cv2.IMREAD_COLOR)[:,:,2]
+    tmp=cv2.imread('Templates0\\'+str(i)+'.jpg',cv2.IMREAD_COLOR)[:,:,2]
     tw, th = tmp.shape[::-1]
     res = cv2.matchTemplate(img2,tmp,cv2.TM_SQDIFF_NORMED)
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
