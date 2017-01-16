@@ -1,0 +1,19 @@
+in matlab
+clipboard('copy',data)
+
+https://pypi.python.org/pypi/pyperclip
+
+import pyperclip
+pyperclip.copy('The text to be copied to the clipboard.')
+spam = pyperclip.paste()
+
+
+
+
+
+import cv2
+img=cv2.imread('aaaaa',0)
+cv2.imshow('title',img)
+cv2.imwrite('addd',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
