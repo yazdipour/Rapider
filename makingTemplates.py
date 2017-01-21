@@ -21,4 +21,4 @@ x,y=0,0
 for i in range(0,7):
     for j in range(0,10):
         x,y=i*w,j*h
-        cv2.imwrite('Templates0\\q'+str(i)+str(j)+'.jpg',img[y+10:y+h-10,x+10:x+w-10])
+        cv2.imwrite('Templates0\\q'+str(i)+str(j)+'.bmp',img[y+15:y+h-15,x+15:x+w-15])
