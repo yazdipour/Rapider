@@ -9,13 +9,11 @@ x,y=first[0],first[1]
 w,h=last[0]-first[0],last[1]-first[1]
 robot = Robot()
 robot.sleep(3)
-
 scrn = numpy.array(ImageGrab.grab().convert('RGB')) 
 scrn = scrn[:, :, ::-1].copy() 
 scrn=scrn[y:y+h, x:x+w]
 img = scrn[:,:,2]
 img = cv2.equalizeHist(img)
-
 x,y,w,h=0,0,len(img[0])/7,len(img)/10
 img2=img.copy()
 toClick=[]
