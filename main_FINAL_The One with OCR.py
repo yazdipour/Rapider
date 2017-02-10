@@ -49,7 +49,6 @@ for r in range(10):
     for c in range(7):
         t=Entry(root,width=6)
         t.grid(row=r,column=c,ipady=4)
-        # t.pack()
         txtbox[r].append(t)
 Button(root, text ="Go",width=30,command=go,bg='green').grid(pady=10,columnspan=7)
 Button(root, text ="OCR",width=30,command=ocr,bg='lightblue').grid(pady=10,columnspan=8)
