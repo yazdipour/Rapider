@@ -1,10 +1,22 @@
 # Rapider
-Robot to play rapid70, fast70
 
-For more information visit http://shahriar.in/blog/post/214
+A Robot that plays rapid70, using:
+* Python
+* OpenCV
+* ImageGrab
+* numpy
+* Tkinter
 
-![alt tag](http://shahriar.in/blog/wp-content/uploads/Screenshot-39-204x300.png)
+Get Rapid70 from GooglePlay: https://play.google.com/store/apps/details?id=ab.rapid70&hl=en_US
 
-## World record with  359 score
+![rapid70](README/3.png)
 
-![alt tag](http://shahriar.in/blog/wp-content/uploads/photo_2017-01-24_21-16-35-176x300.jpg)
+## World record with 359_score
+
+![rank](README/0.png)
+
+## What our robot sees
+
+![image processing](README/1.png)
+
+![image processing](README/2.png)
